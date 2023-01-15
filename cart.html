@@ -1,0 +1,140 @@
+<!DOCTYPE html> <!-- The new doctype -->
+<html>
+    <head>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>CART</title>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        
+
+        
+    </head>
+    
+    <body>
+    	
+    	<section id="page"> <!-- Defining the #page section with the section tag -->
+
+		  <!-- <img src="logo.png" height="50px" width="50px" alt=”site’s logo”> <h3>Computer Parts Store</h3>  -->   
+    
+            <header> <!-- Defining the header section of the page with the appropriate tag -->
+            
+          
+                 <br>
+				 <br>
+				 <br>
+               
+            <hgroup>
+                 <img src="logo2.png" height="80px" width="250x" alt=”site’s logo”>
+                 
+                </hgroup>
+                                
+                <nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
+                    <ul>
+					<li><a href="template.html">Home</a></li>
+                        <li><a href="index1.php">Inventory</a></li>
+                        <li><a href="#article2">Products</a></li>
+                        <li><a href="#article3">Cart</a></li>
+                        <li><a href="#article4">About</a></li>
+                    </ul>
+                </nav>
+            
+            </header>
+            <div class="line"></div>
+  <body>
+
+	
+	<br>
+	<br>
+  <h1 align="center"><font color="#1C2833" size="10">Product Order Information</font></h1><hr><br>
+  <form align="center">
+      <h1 align="center"><font color="#1C2833"><U>Costumer Information</U></font></h2>
+      <h3 align="center"><font color="#1C2833"><I>Please enter the following information:</I></font></h2>
+          <p><font color="#1C2833" size="4">Customer ID: </font><input type="text" name="CustomerID" size="15" maxlength="30" placeholder="C-XXXXX"></p>
+          <p><font color="#1C2833" size="4">First Name: </font><input type="text" name="FirstName" size="15" maxlength="30" placeholder="Enter First Name"></p>
+          <p><font color="#1C2833" size="4">Last Name: </font><input type="text" name="LastName" size="15" maxlength="30" placeholder="Enter Last Name"></p>
+          <p><font color="#1C2833" size="4">Delivery Address: </font><input type="text" name="DeliveryAddress" size="15" maxlength="30" placeholder="Enter Address"></p>
+          <p><font color="#1C2833" size="4">Email Address: </font><input type="email" name="Email" size="15" maxlength="30" placeholder="email@gmail.com"></p>
+      <br><hr><br>
+      <p><input type="submit" value="SUBMIT"> <input type="reset" value="RESET"></p>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+        <footer> <!-- Marking the footer section -->
+
+           <div class="line"></div>
+             <a href="#" class="up">GROUP6</a>
+  <style>
+  
+
+    #clock {
+      height: 5vh;
+      width: 15%;
+      background-color: linear-gradient(to bottom right,white, rgb(240, 65, 65));
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+  </style>
+	
+           <div id="clock">
+  </div>
+  <script>
+      function clock() {
+      let date = new Date();
+      let hrs = date.getHours();
+      let mins = date.getMinutes();
+      let secs = date.getSeconds();
+      let period = "AM";
+    
+      if (hrs == 0) hrs = 12;
+      if (hrs > 12) {
+        hrs = hrs - 12;
+        period = "PM";
+      }
+    
+      hrs = hrs < 10 ? `0${hrs}` : hrs;
+      mins = mins < 10 ? `0${mins}` : mins;
+      secs = secs < 10 ? `0${secs}` : secs;
+    
+      let time = `${hrs}:${mins}:${secs} ${period}`;
+      setInterval(clock, 1000);
+      document.getElementById("clock").innerText = time;
+    }
+    
+    clock();
+
+  </script>
+         
+           
+           
+
+        </footer>
+            
+		</section> <!-- Closing the #page section -->
+    </body>
+</html>
